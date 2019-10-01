@@ -1,0 +1,42 @@
+.menu {
+  position: absolute;
+  background-color: black;
+  margin-top: 70px;
+  box-sizing: border-box;
+  display: flex;
+  top: 0px;
+  height: 50%;
+}
+
+.menu ul {
+  padding: 0;
+  list-style-type: none;
+  margin: 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: white;
+  border-radius: 5px;
+  flex-basis: 100%;
+}
+
+.menu a {
+  font-variant: small-caps;
+  color: white;
+  display: flex;
+  box-sizing: border-box;
+  text-decoration: none;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  font-size: 20px;
+}
+
+.menu a:hover {
+  background: white;
+  color: black;
+}
