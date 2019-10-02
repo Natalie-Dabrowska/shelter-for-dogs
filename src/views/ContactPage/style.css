@@ -5,7 +5,7 @@
 }
 
 .contact {
-  height: 400px;
+  height: 460px;
   margin-top: 30px;
   background-color: black;
   margin-left: 150px;
@@ -14,6 +14,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 30px;
 }
 
 .contact-title {
@@ -43,4 +44,23 @@
   font-feature-settings: "c2sc";
   font-variant: small-caps;
   font-size: 22px;
+}
+
+.icon-home {
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.icon-email {
+  color: white;
+  font-size: 20px;
+  margin-top: 25px;
+}
+
+.icon-phone {
+  color: white;
+  font-size: 20px;
+  margin-top: 25px;
 }
