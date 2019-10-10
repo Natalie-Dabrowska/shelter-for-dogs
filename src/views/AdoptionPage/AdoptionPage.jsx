@@ -1,18 +1,19 @@
 import React from "react";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
+import DogList from "../../components/DogList/DogList";
 import "./style.css";
 
-class HostelPage extends React.Component {
+class AdoptionPage extends React.Component {
   render() {
     return (
       <div className="app">
         <Header />
-        Adopcja
+        <DogList />
         <Footer />
       </div>
     );
   }
 }
 
-export default HostelPage;
+export default AdoptionPage;
