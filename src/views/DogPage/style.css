@@ -1,0 +1,55 @@
+.app {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dog-background {
+  padding-bottom: 40px;
+  width: 800px;
+  margin-top: 30px;
+  background-color: black;
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  height: 400px;
+}
+
+.dog-page-name {
+  padding-top: 15px;
+  margin-right: auto;
+  margin-left: 100px;
+  font-feature-settings: "c2sc";
+  padding: 10px;
+  box-shadow: 5px 10px;
+  width: 170px;
+  margin-top: 40px;
+  background: inherit;
+  font-variant: small-caps;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  border: 1px white solid;
+}
+
+.dog-picture {
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.about-dog {
+  font-feature-settings: "c2sc";
+  font-variant: small-caps;
+  color: white;
+  font-size: 22px;
+  height: 70%;
+  width: 100%;
+  display: flex;
+}
+
+.text-dog {
+}
