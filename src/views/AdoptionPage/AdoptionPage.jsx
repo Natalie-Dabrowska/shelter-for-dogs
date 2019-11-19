@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import DogList from "../../components/DogList/DogList";
+import NewDogForm from "../../components/NewDogForm/NewDogForm";
 import "./style.css";
 
 class AdoptionPage extends React.Component {
@@ -11,6 +12,7 @@ class AdoptionPage extends React.Component {
         <Header />
         <DogList />
         <Footer />
+        <NewDogForm />
       </div>
     );
   }

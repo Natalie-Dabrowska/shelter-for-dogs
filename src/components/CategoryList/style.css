@@ -1,8 +1,4 @@
 .category-list {
-  border-top: 15px solid black;
-  border-right: 15px solid black;
-  border-left: 15px solid black;
-  flex-direction: column | row;
   margin-top: 10px;
   margin-bottom: 10px;
   color: white;

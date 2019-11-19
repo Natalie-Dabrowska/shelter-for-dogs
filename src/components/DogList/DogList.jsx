@@ -1,59 +1,45 @@
 import React from "react";
 import DogItem from "../DogItem/DogItem";
+import api from "../../api/api";
 import "./style.css";
 
-const dogs = [
-  {
-    id: 1,
-    name: "franek",
-    photo: "images/franek.jpg"
-  },
-  {
-    id: 2,
-    name: "leo",
-    photo: "images/pies4.jpg"
-  },
+class DogList extends React.Component {
+  state = {
+    dogs: []
+  };
 
-  {
-    id: 3,
-    name: "pepper",
-    photo: "http://tiny.cc/rnc7bz"
-  },
-  {
-    id: 4,
-    name: "timon",
-    photo: "images/pies2.jpg"
-  },
-  {
-    id: 5,
-    name: "tomi",
-    photo: "images/pies6.jpg"
-  },
-  {
-    id: 6,
-    name: "bronek",
-    photo: "images/pies3.jpg"
-  },
-  {
-    id: 7,
-    name: "pixel",
-    photo: "images/Ptysiu.jpg"
-  },
-  {
-    id: 8,
-    name: "tosia",
-    photo: "http://tiny.cc/e0b7bz"
+  componentDidMount() {
+    setInterval(() => {
+      this.getDogs();
+    }, 3000);
+
+    this.getDogs();
   }
-];
 
-const DogList = () => {
-  return (
-    <div className="doglist">
-      {dogs.map(dog => {
-        return <DogItem name={dog.name} photo={dog.photo} />;
-      })}
-    </div>
-  );
-};
+  getDogs = () => {
+    api.getDogs().then(response => {
+      this.setState({
+        dogs: response
+      });
+    });
+  };
+
+  render() {
+    return (
+      <div className="doglist">
+        {this.state.dogs.map(dog => {
+          return (
+            <DogItem
+              name={dog.name}
+              photo={dog.photo}
+              id={dog.id}
+              key={dog.id}
+            />
+          );
+        })}
+      </div>
+    );
+  }
+}
 
 export default DogList;

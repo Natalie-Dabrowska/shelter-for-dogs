@@ -39,6 +39,8 @@
   width: 300px;
   height: 250px;
   object-fit: cover;
+  padding-left: 80px;
+  padding-bottom: 50px;
 }
 
 .about-dog {
@@ -46,10 +48,12 @@
   font-variant: small-caps;
   color: white;
   font-size: 22px;
-  height: 70%;
-  width: 100%;
   display: flex;
+  text-align: center;
+  margin-right: 60px;
 }
 
 .text-dog {
+  padding-top: 40px;
+  padding-left: 50px;
 }
