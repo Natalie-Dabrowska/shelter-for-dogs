@@ -31,7 +31,7 @@ class NewDogForm extends React.Component {
         <div className="namedog">
           <form onSubmit={this.handleSubmit}>
             <div className="form">
-              <div>
+              <div className="column">
                 <div>
                   <label className="fontsize">Imię:</label>
                   <input
@@ -55,7 +55,7 @@ class NewDogForm extends React.Component {
                   ></textarea>
                 </div>
               </div>
-              <div>
+              <div className="column">
                 <div>
                   <label className="input-link">link:</label>
                   <input
