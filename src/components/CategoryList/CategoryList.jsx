@@ -9,7 +9,6 @@ const categories = [
     title: "dojrzały kompan",
     description: "jeśli szukasz dojrzałego przyjaciela to dobrze trafiłeś"
   },
-
   {
     id: 2,
     url: "http://tiny.cc/e0b7bz",
@@ -29,7 +28,26 @@ class CategoryList extends React.Component {
   render() {
     return (
       <div className="category-list">
-        {categories.map(category => {
+        <div className="prefix1">
+          <span className="sep-line"></span>
+          <div className="prefix">Kim jesteśmy</div>
+          <div className="line-prefix">
+            <p>
+              {" "}
+              JESTEŚMY ORGANIZACJĄ CHRONIĄCĄ I ZAPEWNIAJĄCĄ SCHRONIENIE PSOM.
+            </p>
+            <p> NASZĄ MISJĄ JEST ZMNIEJSZENIE POPULACJI BEZPAŃSKICH PSÓW, </p>
+            <p>
+              {" "}
+              POPRZEZ STERYLIZACJĘ I POPRAWE DOBROSTANU ZWIERZĄT DZIĘKI
+              EDUKACJI,
+            </p>
+            <p> WSPARCIU ZEWNĄTRZ I LUDZI KTÓRZY DECYDUJĄ SIĘ NA ADOPCJE.</p>
+          </div>
+          <img className="logo2" src="/images/logo2.jpg" alt="psy" />
+          <span className="sep-line2"></span>
+        </div>
+        {/* {categories.map(category => {
           return (
             <Category
               url={category.url}
@@ -37,7 +55,7 @@ class CategoryList extends React.Component {
               description={category.description}
             />
           );
-        })}
+        })} */}
       </div>
     );
   }

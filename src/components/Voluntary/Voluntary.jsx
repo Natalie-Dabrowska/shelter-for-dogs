@@ -6,7 +6,7 @@ const Voluntary = () => {
     <div className="voluntary">
       <div className="voluntary-title">Wolontariat</div>
       <div className="voluntary-rule">
-        <h3>Wolontariusz to osoba społeczna która:</h3>
+        <h4>Wolontariusz to osoba społeczna która:</h4>
         <p>Interweniuje w przypadku kiedy zwierze jest w niebezpieczeństwie</p>
         <p>Poszukuje bezdomnych zwierząt i pomaga im znaleść nowy dom</p>
         <p>Pomaga w opiece nad zwierzętami w schronisku</p>

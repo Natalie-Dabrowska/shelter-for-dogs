@@ -18,7 +18,10 @@ const customStyles = {
 
 class DogList extends React.Component {
   state = {
-    dogs: []
+    dogs: [],
+    showNewDogModal: false,
+    showSearch: false,
+    searchDogValue: ""
   };
 
   componentDidMount() {
@@ -37,16 +40,63 @@ class DogList extends React.Component {
     });
   };
 
+  openNewDogModal = () => {
+    this.setState({
+      showNewDogModal: true
+    });
+  };
+
+  closeNewDogModal = () => {
+    this.setState({
+      showNewDogModal: false
+    });
+  };
+
+  handleShowSearch = () => {
+    this.setState({
+      showSearch: !this.state.showSearch
+    });
+  };
+
+  handleSearchInput = event => {
+    this.setState({
+      searchDogValue: event.target.value
+    });
+  };
+
   render() {
+    const filteredDogs = this.state.dogs.filter(dog => {
+      const dogNameLowerCase = dog.name.toLowerCase();
+      const searchDogValueLowerCase = this.state.searchDogValue.toLowerCase();
+      return dogNameLowerCase.startsWith(searchDogValueLowerCase);
+    });
     return (
       <>
         <div className="add-place">
-          <button className="add-dog" type="button">
+          <button
+            className="add-dog"
+            type="button"
+            onClick={this.openNewDogModal}
+          >
             +
           </button>
+          <button onClick={this.handleShowSearch} className="look-for">
+            <i className="fa fa-search" aria-hidden="true"></i>
+          </button>
+          {this.state.showSearch && (
+            <div className="form-box">
+              <input
+                type="text"
+                className="search-dog"
+                placeholder="szukaj"
+                onChange={this.handleSearchInput}
+                value={this.state.searchDogValue}
+              ></input>
+            </div>
+          )}
         </div>
         <div className="doglist">
-          {this.state.dogs.map(dog => {
+          {filteredDogs.map(dog => {
             return (
               <DogItem
                 name={dog.name}
@@ -56,8 +106,8 @@ class DogList extends React.Component {
               />
             );
           })}
-          <Modal isOpen={false} style={customStyles}>
-            <NewDogForm />
+          <Modal isOpen={this.state.showNewDogModal} style={customStyles}>
+            <NewDogForm onSubmit={this.closeNewDogModal} />
           </Modal>
         </div>
       </>

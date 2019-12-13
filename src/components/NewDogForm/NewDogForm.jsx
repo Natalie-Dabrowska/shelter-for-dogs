@@ -21,13 +21,14 @@ class NewDogForm extends React.Component {
       .addDog(this.state.dogName, this.state.information, this.state.link)
       .then(() => {
         this.setState({ isSubmitting: false });
+        this.props.onSubmit();
       });
   };
 
   render() {
     return (
       <div className="newdogform">
-        <div className="title">Formularz</div>
+        <div className="title-form">Formularz</div>
         <div className="namedog">
           <form onSubmit={this.handleSubmit}>
             <div className="form">

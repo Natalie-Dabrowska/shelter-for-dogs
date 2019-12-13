@@ -20,9 +20,7 @@ class Header extends React.Component {
           <i className="fa fa-bars" aria-hidden="true"></i>
         </button>
         {this.state.showMenu && <Menu />}
-        <button className="header-button">
-          <i className="fa fa-search" aria-hidden="true"></i>
-        </button>
+        <img className="logo1" src="/images/logo1.png" alt="psy" />
       </div>
     );
   }

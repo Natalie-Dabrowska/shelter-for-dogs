@@ -19,5 +19,26 @@
 .add-place {
   display: flex;
   justify-content: flex-end;
-  padding-right: 5px;
+  padding-right: 2px;
+  padding-bottom: 10px;
+}
+
+.look-for {
+  width: 35px;
+  height: 35px;
+  font-size: 13px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+.form-box {
+}
+
+.search-dog {
+  height: 30px;
+  font-size: 13px;
+  background-color: black;
+  color: white;
+  padding-left: 7px;
 }

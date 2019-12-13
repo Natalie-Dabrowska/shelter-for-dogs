@@ -6,7 +6,7 @@ class Title extends React.Component {
     return (
       <div>
         <center>
-          <img className="title" src="images/pies.jpg" />
+          <img className="title" src="/images/pies-tlo.jpeg" alt="psy" />
         </center>
       </div>
     );

@@ -18,7 +18,15 @@ const addDog = (name, description, photo) =>
     }).then(response => resolve(response.json()));
   });
 
+const removeDog = id =>
+  new Promise(resolve => {
+    fetch(`${API_URL}/dogs/${id}`, { method: "DELETE" }).then(response =>
+      resolve(response.json())
+    );
+  });
+
 export default {
   getDogs,
-  addDog
+  addDog,
+  removeDog
 };

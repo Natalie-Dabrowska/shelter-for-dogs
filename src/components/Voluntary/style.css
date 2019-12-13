@@ -1,15 +1,15 @@
 .voluntary {
   padding-bottom: 40px;
   width: 800px;
-  margin-top: 30px;
-  background-color: black;
+  background-color: white;
   margin-left: 100px;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
+  border: solid;
+  margin-top: 30px;
 }
 
 .voluntary-title {
@@ -24,14 +24,14 @@
   font-size: 28px;
   font-weight: bold;
   text-align: center;
-  color: white;
-  border: 1px white solid;
+  color: black;
+  border: 3px black solid;
   padding-top: 15px;
-  margin-top: 60px;
+  margin-top: 50px;
 }
 
 .voluntary-rule {
-  color: white;
+  color: black;
   align-items: center;
   text-align: center;
   height: 40%;
@@ -42,7 +42,7 @@
 }
 
 .voluntary-information {
-  color: white;
+  color: black;
   text-align: center;
   font-feature-settings: "c2sc";
   font-variant: small-caps;
@@ -53,6 +53,6 @@
 }
 
 .voluntary-contact {
-  color: white;
+  color: black;
   margin-top: 60px;
 }

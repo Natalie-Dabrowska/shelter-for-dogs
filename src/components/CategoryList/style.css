@@ -1,6 +1,59 @@
 .category-list {
+  background-color: white;
+}
+
+.prefix1 {
   margin-top: 10px;
   margin-bottom: 10px;
   color: white;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.prefix {
+  padding: 10px;
+  box-shadow: 5px 10px;
+  height: 40px;
+  width: 400px;
+  background: inherit;
+  color: inherit;
+  font-feature-settings: "c2sc";
+  font-variant: small-caps;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  border: 3px black solid;
+  padding-top: 15px;
+}
+
+.line-prefix {
+  color: black;
+  padding-top: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+
+.sep-line {
+  height: 57px;
+  border-top: 1px solid #ebebeb;
+  display: block;
+  position: relative;
+  width: 95%;
+}
+
+.sep-line2 {
+  border-top: 1px solid #ebebeb;
+  display: block;
+  position: relative;
+  width: 95%;
+}
+
+.logo2 {
+  width: 80px;
+  padding-bottom: 45px;
 }
