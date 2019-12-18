@@ -8,13 +8,14 @@
   padding-bottom: 40px;
   width: 800px;
   margin-top: 30px;
-  background-color: black;
+  background-color: white;
   margin-left: 100px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 30px;
   height: 400px;
+  border: solid;
 }
 
 .dog-page-name {
@@ -31,26 +32,27 @@
   font-size: 28px;
   font-weight: bold;
   text-align: center;
-  color: white;
-  border: 1px white solid;
+  color: black;
+  border: 3px black solid;
 }
 
 .dog-picture {
   width: 300px;
   height: 250px;
   object-fit: cover;
-  padding-left: 80px;
+  padding-left: 50px;
   padding-bottom: 50px;
 }
 
 .about-dog {
   font-feature-settings: "c2sc";
   font-variant: small-caps;
-  color: white;
+  color: black;
   font-size: 22px;
   display: flex;
   text-align: center;
-  margin-right: 60px;
+  margin-right: 50px;
+  justify-content: space-around;
 }
 
 .text-dog {
